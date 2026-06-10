@@ -5,21 +5,21 @@
 class Quasar < Formula
   desc "Astral themed agent orchestration system inspired by Gas Town"
   homepage "https://github.com/papapumpkin/quasar"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/papapumpkin/quasar/releases/download/v0.1.1/quasar_0.1.1_darwin_amd64.tar.gz"
-      sha256 "b8337e4650747efcf6cc8259c5a662e79515b036c566a92e9bbe260314afa6e2"
+      url "https://github.com/papapumpkin/quasar/releases/download/v0.1.2/quasar_0.1.2_darwin_amd64.tar.gz"
+      sha256 "e214de8a85b0791692ea7fb6dd47f7ead17964588b288519216b3ce6e11d85e1"
 
       define_method(:install) do
         bin.install "quasar"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/papapumpkin/quasar/releases/download/v0.1.1/quasar_0.1.1_darwin_arm64.tar.gz"
-      sha256 "db33d5e44c99ac4d0ef4676823791728953e9069e7ee09940a7510c1ed4be9f2"
+      url "https://github.com/papapumpkin/quasar/releases/download/v0.1.2/quasar_0.1.2_darwin_arm64.tar.gz"
+      sha256 "dc14607c4b7cce97e4ec72a5af4ce7c44368ea49f6bbf7c54b0aef16421ef8c2"
 
       define_method(:install) do
         bin.install "quasar"
@@ -29,8 +29,8 @@ class Quasar < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/papapumpkin/quasar/releases/download/v0.1.1/quasar_0.1.1_linux_amd64.tar.gz"
-      sha256 "51d514fdeeb1f0cd294c65354e54a3773e306e19ce1f8ca1ed6172f88776d7d8"
+      url "https://github.com/papapumpkin/quasar/releases/download/v0.1.2/quasar_0.1.2_linux_amd64.tar.gz"
+      sha256 "897afc7929e24592c2fa0fb635f74c212790815675d46ed8e770057743ce86f7"
       define_method(:install) do
         bin.install "quasar"
       end
